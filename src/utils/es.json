@@ -1,0 +1,30 @@
+{
+    "action": {
+        "save": "guardar",
+        "update": "actualizar",
+        "delete": "Eliminar"
+    },
+    "test": {
+        "counting": "contando {{0}} de {{1}}"
+    },
+    "validation": {
+        "required_field": "Campo requerido"
+    },
+    "label": {
+        "email": "correo electronico",
+        "password": "contraseña",
+        "name": "nombre",
+        "message": "mensaje"
+    },
+    "general": {
+        "add": "añadir",
+        "decrease": "disminuir",
+        "search": "buscar",
+        "contact_us": "contactanos",
+        "counter": "contador"
+    },
+    "actions": {
+        "send": "enviar",
+        "go_home": "ir a inicio"
+    }
+}
