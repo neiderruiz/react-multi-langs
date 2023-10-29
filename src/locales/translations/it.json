@@ -1,0 +1,24 @@
+{
+    "action": {
+        "save": "Mantenere",
+        "update": "aggiornamento",
+        "delete": "Eliminare"
+    },
+    "test": {
+        "counting": "Conteggio {{0}} di {{1}}"
+    },
+    "general": {
+        "add": "aggiungere",
+        "decrease": "diminuire",
+        "search": "cercare",
+        "contact_us": "Contattaci",
+        "counter": "contatore"
+    },
+    "actions": {
+        "send": "Inviare"
+    },
+    "card": {
+        "title": "Iscriviti al mio canale YouTube I am {{0}}",
+        "message": "Sviluppatore di software appassionato di tecnologia e apprendimento costante. Condivido informazioni e suggerimenti utili sullo sviluppo."
+    }
+}

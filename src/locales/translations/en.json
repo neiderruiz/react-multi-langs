@@ -1,0 +1,24 @@
+{
+    "action": {
+        "save": "keep",
+        "update": "update",
+        "delete": "Eliminate"
+    },
+    "test": {
+        "counting": "counting {{0}} of {{1}}"
+    },
+    "general": {
+        "add": "add",
+        "decrease": "decrease",
+        "search": "look for",
+        "contact_us": "Contact us",
+        "counter": "counter"
+    },
+    "actions": {
+        "send": "send"
+    },
+    "card": {
+        "title": "Subscribe to my YouTube channel I am {{0}}",
+        "message": "Software developer passionate about technology and constant learning. I share information and useful tips on development."
+    }
+}
