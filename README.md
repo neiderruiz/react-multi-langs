@@ -1,4 +1,7 @@
-# React + TypeScript + Vite
+# React Multi Langs
+
+![image](https://github.com/neiderruiz/react-multi-langs/assets/57574910/25c71c99-492b-4293-821e-f8f99db560b3)
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
