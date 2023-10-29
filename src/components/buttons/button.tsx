@@ -1,14 +1,22 @@
-
 type Props = {
     label: string,
     type?: 'submit' | 'button' | 'reset'
+    color?: 'blue' | 'red'
+    onClick?: () => void
 }
 
-const Button = ({ label, type }: Props) => {
+const Button = ({ label, type, color = 'blue', onClick }: Props) => {
+
+    const colors = {
+        blue: 'bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300',
+        red: 'bg-red-700 hover:bg-red-800 focus:ring-2 focus:outline-none focus:ring-red-300'
+    }
+
     return (
         <button
+            onClick={onClick}
             type={type || "button"}
-            className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className={`capitalize w-full text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center ${colors[color]}`}
         >
             {label}
         </button>
