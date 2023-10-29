@@ -1,9 +1,10 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
 import DropdownLang from "../components/dropdown/dropdown-lang";
 import InputSearch from "../components/inputs/input-search";
+import useTranslation from "../hooks/use-tranlation";
 
 const HomeLayout = () => {
-
+  const { t } = useTranslation()
   return (
     <>
       <nav className="border-gray-200 bg-gray-900 fixed w-full">
@@ -23,7 +24,7 @@ const HomeLayout = () => {
                   to="/counter"
                   className={({ isActive }) => `block ${isActive ? 'text-blue-700 hover:text-white' : 'text-white hover:text-blue-700'} capitalize `}
                 >
-                  contador
+                  {t('general.counter')}
                 </NavLink>
               </li>
               <li>
@@ -31,7 +32,7 @@ const HomeLayout = () => {
                   to="/contact"
                   className={({ isActive }) => `block ${isActive ? 'text-blue-700 hover:text-white' : 'text-white hover:text-blue-700'} capitalize  `}
                 >
-                  contactanos
+                  {t('general.contact_us')}
                 </NavLink>
               </li>
             </ul>
