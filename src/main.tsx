@@ -4,8 +4,8 @@ import './index.css'
 
 import { RouteObject, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import HomeLayout from './layouts/home.layout.tsx'
+import './locales/i18n'
 import CounterPage from './pages/counter.page.tsx'
-
 const routes: RouteObject[] = [
   {
     path: '/',
