@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "../components/buttons/button";
 const MAX_COUNT = 10;
 const MIN_COUNT = 0;
 
@@ -6,7 +7,6 @@ const CounterPage = () => {
     const [counter, setCounter] = useState(0);
 
     const addCount = () => {
-
         if (counter < MAX_COUNT) {
             setCounter(counter + 1);
         }
@@ -26,19 +26,17 @@ const CounterPage = () => {
                     contador
                 </h2>
                 <div className="flex space-x-2">
-                    <button
+                    <Button
                         onClick={addCount}
-                        className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  px-5 py-2.5 text-center "
-                    >
-                        Añadir
-                    </button>
+                        label="Añadir"
+                    />
 
-                    <button
+                    <Button
                         onClick={substractCount}
-                        className="w-full text-white bg-red-700 hover:bg-red-800 focus:ring-2 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm  px-5 py-2.5 text-center"
-                    >
-                        Disminuir
-                    </button>
+                        label="disminuir"
+                        color="red"
+                    />
+
                 </div>
                 <div className="flex justify-center">
                     <span className="font-bold text-2xl">
