@@ -1,26 +1,21 @@
-import { useState } from "react";
-const langs = [
-  {
-    value: "en",
-    label: "English",
-    icon: "https://flagcdn.com/60x45/us.png",
-  },
-  {
-    value: "es",
-    label: "Español",
-    icon: "https://flagcdn.com/60x45/es.png",
-  },
-  {
-    value: "it",
-    label: "Italiano",
-    icon: "https://flagcdn.com/60x45/it.png",
-  }
-];
+import { useEffect, useState } from "react";
+import i18n, { langs } from "../../locales/i18n";
+
 const DropdownLang = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentLang, setCurrentLang] = useState(langs.find((l) => l.value === 'es')!);
 
+  useEffect(() => {
+    if (window.localStorage.getItem("lang")) {
+      i18n.changeLanguage(window.localStorage.getItem("lang")!);
+      setCurrentLang(langs.find((l) => l.value === window.localStorage.getItem("lang"))!);
+    }
+  }, [])
+
+
   const changeLang = (lang: string) => {
+    window.localStorage.setItem("lang", lang);
+    i18n.changeLanguage(lang);
     setIsOpen(false);
     setCurrentLang(langs.find((l) => l.value === lang)!);
   };
